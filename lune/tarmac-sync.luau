@@ -79,11 +79,8 @@ end
 
 fs.writeFile(
     CodegenPath,
-    `-- This file  is not intended for manual editing\n--!nocheck\n\nreturn ` ..
-    LuaEncode(Icons, {
-        Prettify = true,
-        FunctionsReturnRaw = true,
-    }) ..
+    `-- This file was automatically @generated and not intended for manual editing\n--!nocheck\n\nreturn ` ..
+    LuaEncode(Icons) ..
     "\n"
 )
 
