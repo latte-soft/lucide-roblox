@@ -4,7 +4,7 @@
 [commits]: https://github.com/latte-soft/lucide-roblox/commits
 [discord]: https://latte.to/discord
 
-[wally-package]: https://wally.run/package/latte-soft/lucide-roblox
+[wally-package]: https://wally.run/package/latte-soft/lucide-icons
 [roblox-marketplace]: https://roblox.com/library/15279939717
 
 [badges/stars]: https://img.shields.io/github/stars/latte-soft/lucide-roblox?label=Stars&logo=GitHub
@@ -49,7 +49,7 @@ Lucide = "latte-soft/lucide-icons@0.1.0"
 
 ### Get from the Roblox Developer Marketplace
 
-If you really want to, you could even [take the model for your inventory](https://roblox.com/library/15279939717), and import it from Studio's `Toolbox` etc.
+If you really want to, you could even [take the model for your inventory][roblox-marketplace], and import it from Studio's `Toolbox` etc.
 
 ## 🔨 Usage/API
 
