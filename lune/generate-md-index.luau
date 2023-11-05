@@ -23,7 +23,10 @@ for _ in StringUtils.SplitFilePath(StringUtils.DirectoryOfFilePath(OutputPath) :
     RelativeUpString ..= "../"
 end
 
-for _, FileName in fs.readDir(IconSourcesDir) do
+local IconSourcesDirFileNames = fs.readDir(IconSourcesDir)
+table.sort(IconSourcesDirFileNames)
+
+for _, FileName in IconSourcesDirFileNames do
     local IconName = StringUtils.FileNameWithoutExtension(FileName)
     local IconDisplayFilePath = `{RelativeUpString}{IconDisplayDir}/{IconName}.{IconDisplayFileType}`
 
