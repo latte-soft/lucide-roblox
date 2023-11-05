@@ -8,7 +8,7 @@ local StringUtils = require("modules/StringUtils")
 local Log = require("modules/Log")
 local LuaEncode = require("libraries/LuaEncode")
 
-local CodegenPath = "lib/icons.luau"
+local CodegenPath = "lib/Icons.luau"
 local CodegenBasePath = "icons/compiled/"
 local IconNameDir = "icons/src/"
 
