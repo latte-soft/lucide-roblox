@@ -1,5 +1,5 @@
 [package]
-name = "latte-soft/lucide-roblox"
+name = "latte-soft/lucide-icons"
 description = "Library to Use the Lucide Icon Set (https://lucide.dev) in Roblox"
 version = "0.1.0"
 license = "MIT AND ISC"

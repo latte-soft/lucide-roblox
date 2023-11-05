@@ -30,7 +30,7 @@ for _, FileName in IconSourcesDirFileNames do
     local IconName = StringUtils.FileNameWithoutExtension(FileName)
     local IconDisplayFilePath = `{RelativeUpString}{IconDisplayDir}/{IconName}.{IconDisplayFileType}`
 
-    Output ..= `| <img width="24px" height="24px" src="{StringUtils.SerializeStringData(IconDisplayFilePath)}" /> | \`{IconName}\` |\n`
+    Output ..= `| <img width="24px" src="{StringUtils.SerializeStringData(IconDisplayFilePath)}" /> | \`{IconName}\` |\n`
 end
 
 fs.writeFile(OutputPath, Output)

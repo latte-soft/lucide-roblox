@@ -6,12 +6,12 @@
         "ServerStorage": {
             "$className": "ServerStorage",
 
-            "Lucide Storybooks": {
-                "$path": "stories",
+            "Lucide": {
+                "$path": "default.project.json"
+            },
 
-                "MainModule": {
-                    "$path": "default.project.json"
-                }
+            "Lucide Storybooks": {
+                "$path": "stories"
             }
         }
     }

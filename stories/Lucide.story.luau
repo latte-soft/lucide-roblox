@@ -1,6 +1,8 @@
 -- MIT License | Copyright (c) 2023 Latte Softworks <https://latte.to>
 
-local Lucide = require(script.Parent.MainModule)
+local ServerStorage = game:GetService("ServerStorage")
+
+local Lucide = require(ServerStorage.Lucide)
 
 local function ApplyToInstance(object: Instance, properties: {[string]: any}): Instance
     if properties then

@@ -22,7 +22,7 @@ SOFTWARE.
 
 # Lucide License (ISC)
 
-This is the license for the Lucide icon set, used in this package. You can view it online directly at <https://lucide.dev/license>.
+Lucide Icons (this package's icon sources) are licensed under ISC License. You can view it online directly at <https://lucide.dev/license>.
 
 ## ISC License
 

@@ -1,7 +1,7 @@
 -- MIT License | Copyright (c) 2023 Latte Softworks <https://latte.to>
 
 export type Asset = {
-    IconName: string, -- "server-crash"
+    IconName: string, -- "icon-name"
     Id: number, -- 123456789
     Url: string, -- "rbxassetid://123456789"
     ImageRectSize: Vector2, -- Vector2.new(48, 48)
@@ -63,6 +63,7 @@ do
     end
 
     table.sort(IconNames)
+    table.freeze(IconNames)
     Lucide.IconNames = IconNames
 end
 
@@ -135,6 +136,41 @@ function Lucide.GetAsset(iconName: string, iconSize: number?): Asset
 end
 
 --[[
+    Returns a dictionary of every `Asset` from every icon name in `Lucide.IconNames`
+
+    This could also be useful for, for example, working with a custom asset
+    preloading system via `ContentProvider:PreloadAsync()` etc
+
+    *Example:*
+    ```lua
+    local AllAssets = Lucide.GetAllAssets(256) -- Also defaults to `256`, just like `Lucide.GetAsset()`
+
+    for _, Asset in AllAssets do
+        print(Asset.IconName, Asset.Url)
+    end
+    ```
+]]
+function Lucide.GetAllAssets(inputSize: number?): {Asset}
+    local InputSize = if inputSize == nil then 256 else inputSize
+
+    CheckArgTypes("Lucide.GetAllAssets", {InputSize}, {
+        [1] = {"inputSize", "number"},
+    })
+
+    local Assets = {}
+
+    for _, IconName in Lucide.IconNames do
+        local Asset = Lucide.GetAsset(IconName, InputSize)
+        if Asset then
+            table.insert(Assets, Asset)
+        end
+    end
+
+    -- `Lucide.IconNames` is already pre-sorted
+    return Assets
+end
+
+--[[
     Wrapper around `Lucide.GetAsset()` that fetches asset info for the specified
     icon name and size, anc creates an `ImageLabel` Instance. Accepts an additional
     optional argument for providing a table of properties to automatically apply
@@ -195,39 +231,5 @@ function Lucide.ImageLabel(iconName: string, imageSize: number?, propertyOverrid
     return ImageLabel
 end
 
---[[
-    Returns a dictionary of every `Asset` from every icon name in `Lucide.IconNames`
-
-    This could also be useful for, for example, working with a custom asset
-    preloading system via `ContentProvider:PreloadAsync()` etc
-
-    *Example:*
-    ```lua
-    local AllAssets = Lucide.GetAllAssets(256) -- Also defaults to `256`, just like `Lucide.GetAsset()`
-
-    for _, Asset in AllAssets do
-        print(Asset.IconName, Asset.Url)
-    end
-    ```
-]]
-function Lucide.GetAllAssets(inputSize: number?): {Asset}
-    local InputSize = if inputSize == nil then 256 else inputSize
-
-    CheckArgTypes("Lucide.GetAllAssets", {InputSize}, {
-        [1] = {"inputSize", "number"},
-    })
-
-    local Assets = {}
-
-    for _, IconName in Lucide.IconNames do
-        local Asset = Lucide.GetAsset(IconName, InputSize)
-        if Asset then
-            table.insert(Assets, Asset)
-        end
-    end
-
-    -- `Lucide.IconNames` is already pre-sorted
-    return Assets
-end
-
+table.freeze(Lucide)
 return Lucide
