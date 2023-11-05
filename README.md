@@ -20,7 +20,7 @@
 
 # [![Lucide Logo][img/lucide-logo]](https://lucide.dev) Lucide Icons for Roblox
 
-[![Stars][badges/stars]][stars] [![License][badges/license]][license] [![Latest Release][badges/latest-release]][latest-release] [![Last Modified][badges/last-modified]][commits] [![Discord Server][badges/discord]][discord]
+<!--[![Stars][badges/stars]][stars]--> [![License][badges/license]][license] [![Latest Release][badges/latest-release]][latest-release] [![Last Modified][badges/last-modified]][commits] [![Discord Server][badges/discord]][discord]
 
 [![Get it from Wally][badges/wally]][wally-package] [![Get it from the Roblox Marketplace][badges/roblox-marketplace]][roblox-marketplace]
 
