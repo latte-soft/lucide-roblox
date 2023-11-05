@@ -4,7 +4,7 @@ local process = require("@lune/process")
 
 local Log = require("Log")
 
-local function Run(command: string, args: {string}?, directRun: boolean?, errorHandler: (string?) -> ()?): process.SpawnResult
+local function Run(command: string, args: {string}?, directRun: boolean?, errorHandler: (string) -> ()?): process.SpawnResult
     local Args = args or {}
     local DirectRun = if directRun == nil then false else directRun
 

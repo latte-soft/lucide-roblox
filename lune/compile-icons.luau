@@ -4,9 +4,9 @@ local fs = require("@lune/fs")
 local stdio = require("@lune/stdio")
 local process = require("@lune/process")
 
+local Log = require("modules/Log")
 local CommandUtils = require("modules/CommandUtils")
 local StringUtils = require("modules/StringUtils")
-local Log = require("modules/Log")
 local Run = require("modules/Run")
 local ParseArgs = require("modules/ParseArgs")
 

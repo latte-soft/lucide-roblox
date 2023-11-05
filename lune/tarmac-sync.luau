@@ -4,8 +4,8 @@
 local fs = require("@lune/fs")
 local serde = require("@lune/serde")
 
-local StringUtils = require("modules/StringUtils")
 local Log = require("modules/Log")
+local StringUtils = require("modules/StringUtils")
 local LuaEncode = require("libraries/LuaEncode")
 
 local CodegenPath = "lib/Icons.luau"

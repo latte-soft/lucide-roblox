@@ -9,7 +9,7 @@
             "Lucide Storybooks": {
                 "$path": "stories",
 
-                "Lucide": {
+                "MainModule": {
                     "$path": "default.project.json"
                 }
             }

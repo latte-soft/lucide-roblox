@@ -9,6 +9,7 @@ export type Asset = {
 }
 
 local Icons = require(script.Icons)
+local VersionInfo = require(script.VersionInfo)
 
 local Type = typeof or type
 local function CheckArgTypes(funcName: string, inputArgs: {any}, typeEntries: {[number]: {string}})
@@ -45,9 +46,10 @@ local function ApplyToInstance(object: Instance, properties: {[string]: any}): I
     return object
 end
 
+-- See /version-info.luau
 local Lucide = {
-    PackageVersion = "0.1.0", -- The version of this `lucide-roblox` package
-    LucideVersion = "0.292.0", -- The version of the Lucide icon set itself the package ver noted above is on
+    PackageVersion = VersionInfo.PackageVersion,
+    LucideVersion = VersionInfo.LucideVersion,
 }
 
 -- Add all icon names to an array

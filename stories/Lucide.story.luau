@@ -1,6 +1,6 @@
 -- MIT License | Copyright (c) 2023 Latte Softworks <https://latte.to>
 
-local Lucide = require(script.Parent.Lucide)
+local Lucide = require(script.Parent.MainModule)
 
 local function ApplyToInstance(object: Instance, properties: {[string]: any}): Instance
     if properties then
@@ -30,10 +30,6 @@ return function(target: Frame)
         AutomaticCanvasSize = Enum.AutomaticSize.Y,
         CanvasSize = UDim2.fromOffset(0, 0),
         ScrollBarThickness = 8,
-
-        --BottomImage = "",
-        --MidImage = "",
-        --TopImage = "",
     })
 
     ApplyToInstance(Instance.new("UIGridLayout"), {
