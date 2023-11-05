@@ -1,0 +1,12 @@
+[package]
+name = "latte-soft/lucide-roblox"
+description = "Utilize the Lucide Icon Set (https://lucide.dev) in Roblox"
+version = "0.1.0"
+license = "MIT AND ISC"
+authors = ["Latte Softworks <contact@latte.to>"]
+
+exclude = ["**"]
+include = ["LICENSE.md", "wally.toml", "wally.lock", "default.project.json", "lib", "lib**"]
+
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"

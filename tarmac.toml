@@ -1,0 +1,7 @@
+name = "lucide-roblox"
+
+# We build codegen ourselves, not through Tarmac directly!
+
+[[inputs]]
+glob = "icons/compiled/**/*.png"
+packable = true
