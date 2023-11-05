@@ -62,8 +62,8 @@ for FilePath, ImageInfo in Inputs do
                 local SizeX = ImageRectOffsetBounds[1] - OffsetX
                 local SizeY = ImageRectOffsetBounds[2] - OffsetY
 
-                ImageObject[2] = {OffsetX, OffsetY} -- ImageRectOffset
-                ImageObject[3] = {SizeX, SizeY} -- ImageRectSize
+                ImageObject[2] = {SizeX, SizeY} -- ImageRectSize
+                ImageObject[3] = {OffsetX, OffsetY} -- ImageRectOffset
             end
 
             CurrentLocation[ImageName] = ImageObject
