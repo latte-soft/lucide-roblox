@@ -3,7 +3,7 @@
 This file contains an auto-generated index of icons, paired with their internal identifier that you can use with `lucide-roblox`'s API
 
 | Icon | Identifier |
-| ---- | ---------- |
+| :--: | ---------- |
 | <img width="24px" height="24px" src="../icons/compiled/48px/fast-forward.png" /> | `fast-forward` |
 | <img width="24px" height="24px" src="../icons/compiled/48px/webcam.png" /> | `webcam` |
 | <img width="24px" height="24px" src="../icons/compiled/48px/flag-off.png" /> | `flag-off` |
