@@ -14,8 +14,8 @@ local Output = [[
 
 This file contains an auto-generated index of icons, paired with their internal identifier that you can use with `lucide-roblox`'s API
 
-| Icon SVG  | Identifier |
-| --------- | ---------- |
+| Icon | Identifier |
+| ---- | ---------- |
 ]]
 
 local RelativeUpString = ""
