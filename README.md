@@ -45,7 +45,7 @@ If you're familiar with [Wally](https://wally.run), you can also import the `lat
 
 ```toml
 [dependencies]
-Lucide = "latte-soft/lucide-icons@0.1.1"
+Lucide = "latte-soft/lucide-icons@0.1.2"
 ```
 
 ### Get from the Roblox Developer Marketplace

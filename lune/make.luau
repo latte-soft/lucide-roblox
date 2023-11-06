@@ -8,8 +8,8 @@ local Run = require("modules/Run")
 
 local VersionInfo = require("../version-info")
 
-local RojoOutputPath = "build/react-roblox.rbxm"
-local WaxOutputPath = "build/react-roblox.luau"
+local RojoOutputPath = "build/lucide-roblox.rbxm"
+local WaxOutputPath = "build/lucide-roblox.luau"
 
 local CodegenHeader = "--!nolint\n--!nocheck\n--!optimize 2\n--!native\n\n" ..
                       "--[[\n" ..
