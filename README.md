@@ -33,7 +33,7 @@ This library was originally made for the intent of use with the [Commander](http
 
 ## ⚙️ Installation
 
-There are multiple methods of using the library in your project; you can download the model/script file directly, use the [Wally](https://wally.run) package manager, or `require()` the module ID from Roblox's official Developer Marketplace at runtime.
+There are multiple methods of using the library in your project; you can download the model/script file directly, use the [Wally](https://wally.run) package manager, or get it on Roblox's official Developer Marketplace.
 
 ### Manual Download
 
