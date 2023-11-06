@@ -78,7 +78,7 @@ From here, you can use any of the API members listed below.
     Lucide.PackageVersion: string
     ```
 
-    The version of the `lucide-roblox` package currently in-use *(e.g. `0.1.0`)*
+    The version of the `lucide-roblox` library currently in-use *(e.g. `0.1.0`)*
 
 *   ```lua
     Lucide.LucideVersion: string
