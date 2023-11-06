@@ -18,7 +18,7 @@
 
 [img/lucide-logo]: repo-assets/lucide-logo-dark.svg
 
-# [![Lucide Logo][img/lucide-logo]](https://lucide.dev) Lucide Icons for Roblox
+# [![Lucide Logo][img/lucide-logo]](https://lucide.dev) Lucide Icons Library for Roblox
 
 <!--[![Stars][badges/stars]][stars]-->
 [![License][badges/license]][license] [![Latest Release][badges/latest-release]][latest-release] [![Last Modified][badges/last-modified]][commits] [![Discord Server][badges/discord]][discord]
@@ -27,7 +27,7 @@
 
 Library to Use the Lucide Icon Set (<https://lucide.dev>) in Roblox
 
-Unlike the similar [plugin](https://kotera.7kayoh.net/lucide) made some time ago, this library exists to serve as a library/package that you can access *programmatically* at runtime in any other games, applications, plugins etc. You could even write a plugin frontend with this library to implement an icon picker if you wanted!
+Unlike the similar [plugin](https://kotera.7kayoh.net/lucide) (which uses this library as well!), this exists to serve as a library/package that you can access *programmatically* at runtime in any other games, applications, plugins etc. You could even write another plugin frontend with this library to implement an icon picker if you wanted. **It is not** a standalone application, rather a [lib](lib).
 
 This library was originally made for the intent of use with the [Commander](https://github.com/commanderhq) project, but stands applicable to anything else as well.
 
