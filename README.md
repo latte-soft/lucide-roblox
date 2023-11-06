@@ -37,7 +37,7 @@ There are multiple methods of using the library in your project; you can downloa
 
 ### Manual Download
 
-From the [releases page](https://github.com/latte-soft/lucide-roblox/releases), on the latest published release, you can download either `lucide-roblox.rbxm`, or `lucide-roblox.luau` (build by the [Wax](https://github.com/latte-soft/wax) bundler) if you want to use the library from one module. From there, just import into your project/Studio, and you're done!
+From the [releases page](https://github.com/latte-soft/lucide-roblox/releases), on the latest published release, you can download either `lucide-roblox.rbxm`, or `lucide-roblox.luau` (built by the [Wax](https://github.com/latte-soft/wax) bundler) if you want to use the library from one module. From there, just import into your project/Studio, and you're done!
 
 ### Via the Wally Package Manager
 
