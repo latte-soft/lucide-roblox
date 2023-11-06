@@ -84,7 +84,7 @@ From here, you can use any of the API members listed below.
     Lucide.LucideVersion: string
     ```
 
-    The version of lucide Icons itself that's aligned with the current package version *(e.g. `0.292.0`)*
+    The version of Lucide Icons itself that's aligned with the current library version *(e.g. `0.292.0`)*
 
 *   ```lua
     Lucide.IconNames: {string}
