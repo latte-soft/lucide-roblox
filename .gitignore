@@ -4,4 +4,6 @@
 /*.rbxl
 /*.rbxlx
 
+/wally.lock # Unused
+
 sourcemap.json
