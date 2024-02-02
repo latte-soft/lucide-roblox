@@ -54,7 +54,7 @@ If you really want to, you could even [take the model for your inventory][roblox
 
 ## 🔨 Usage/API
 
-You must define a `Lucide` variable mapping to wherever the library's module is located; `ReplicatedStorage`, Wally's `Packages` directory, wherever.. (The `Lucide` variable name isn't a requirement, but it is what we're using to identify members of the API in the section)
+You must define a `Lucide` variable mapping to wherever the library's module is located - `ReplicatedStorage`, Wally's `Packages` directory, wherever..
 
 For the sake of generalization, here's an example for if the module was under `ReplicatedStorage` in a standard game/workflow:
 
@@ -78,7 +78,7 @@ From here, you can use any of the API members listed below.
     Lucide.PackageVersion: string
     ```
 
-    The version of the `lucide-roblox` library currently in-use *(e.g. `0.1.0`)*
+    The version of the `lucide-roblox` library itself *(e.g. `0.1.0`)*
 
 *   ```lua
     Lucide.LucideVersion: string
