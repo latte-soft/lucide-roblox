@@ -1,5 +1,5 @@
 [tools]
 rojo = "rojo-rbx/rojo@7.4.0"
 wally = "UpliftGames/wally@0.3.2"
-tarmac = "rojo-rbx/tarmac@0.7.4"
+tarmac = "rojo-rbx/tarmac@0.7.5"
 lune = "filiptibell/lune@0.7.11"
