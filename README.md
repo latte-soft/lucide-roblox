@@ -31,6 +31,8 @@ Unlike the similar [plugin](https://kotera.7kayoh.net/lucide) (which uses this l
 
 This library was originally made for the intent of use with the [Commander](https://github.com/commanderhq) project, but stands applicable to anything else as well.
 
+See list of rendered icons and their internal identifiers: [md/icon-index.md](md/icon-index.md)
+
 ## ⚙️ Installation
 
 There are multiple methods of using the library in your project; you can download the model/script file directly, use the [Wally](https://wally.run) package manager, or get it on Roblox's official Developer Marketplace.
