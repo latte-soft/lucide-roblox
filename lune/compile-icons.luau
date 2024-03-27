@@ -24,16 +24,12 @@ if process.os ~= "linux" then
 end
 
 local Options = ParseArgs(process.args, {
-    ["icons-folder"] = {"string", "icons/"},
+    ["icons-folder"] = {"string", "icons"},
     ["skip-existing"] = {"boolean", true},
 })
 
 local IconsFolder = Options["icons-folder"]
 local SkipExisting = Options["skip-existing"]
-
-if string.sub(IconsFolder, #IconsFolder) == "/" then
-    IconsFolder = string.sub(IconsFolder, #IconsFolder - 1)
-end
 
 local SourceFolder = `{IconsFolder}/src`
 local CompiledFolder = `{IconsFolder}/compiled`
