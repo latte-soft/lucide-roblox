@@ -37,8 +37,8 @@ local function BadExit(message: string)
     process.exit(1)
 end
 
-Run(`rojo build -o "{RojoOutputPath}"`, nil, nil, BadExit)
-Run(`lune run wax bundle output="{WaxOutputPath}" minify=true extra-offset-lines={#CodegenHeader - 1} ci-mode=true verbose=true`, nil, nil, BadExit)
+Run("rojo", {"build", "-o", `{RojoOutputPath}`}, false, BadExit)
+Run("lune", {"run", "wax", "bundle", `output={WaxOutputPath}`, "minify=true", `extra-offset-lines={#CodegenHeader - 1}`, "ci-mode=true", "verbose=true"}, false, BadExit)
 
 fs.writeFile(WaxOutputPath, CodegenHeader .. fs.readFile(WaxOutputPath) .. "\n")
 
