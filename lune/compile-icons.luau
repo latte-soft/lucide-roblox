@@ -25,7 +25,6 @@ end
 
 local Options = ParseArgs(process.args, {
     ["icons-folder"] = {"string", "icons/"},
-    ["size"] = {"number", 256}, -- (In pixels) Size to export w/ what ratio to scale up at (for Retina etc)
     ["skip-existing"] = {"boolean", true},
 })
 
