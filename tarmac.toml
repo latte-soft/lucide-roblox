@@ -1,4 +1,5 @@
 name = "lucide-roblox"
+upload-to-group-id = 10685936
 
 # We build codegen ourselves, not through Tarmac directly!
 
