@@ -76,6 +76,7 @@ for _, IconFileName in fs.readDir(IconNameDir) do
     table.insert(IconNames, StringUtils.FileNameWithoutExtension(IconFileName))
 end
 
+Log.Info(`Total # of icons: {#IconNames}`)
 
 fs.writeFile(
     CodegenPath,
